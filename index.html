@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <form class="main" id="birthday-form">
+      <div class="up">
+        <div class="day">
+          <p class="title">Day</p>
+          <input id="dd" type="number" placeholder="DD" />
+          <p class="text-error">Must be a valid day</p>
+        </div>
+        <div class="month">
+          <p class="title">Month</p>
+          <input id ="mm"type="number" placeholder=" MM" />
+          <p class="text-error">Must be a valid day</p>
+        </div>
+        <div class="year">
+          <p class="title">Year</p>
+          <input id="yy" type="number" placeholder="YYYY" />
+          <p class="text-error">Must be a valid day</p>
+        </div>
+      </div>
+      <button type="submit" id="enter">
+        <img src="assets/images/icon-arrow.svg" alt="">
+      </button>
+      <div class="output">
+        <div class="output_text output-years"><span>-- </span> years</div>
+        <div class="output_text output-months"><span>-- </span> months</div>
+        <div class="output_text output-days"><span>-- </span> days</div>
+      </div>
+    </form>
+
+   
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Marwa Rabia</a>.
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
